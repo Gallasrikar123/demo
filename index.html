@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UI Code Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Toolbar -->
+    <header class="topbar">
+
+        <div class="brand">
+            <div class="brand-icon">&lt;/&gt;</div>
+            <div>
+                <h1>UI Code Generator</h1>
+                <span>Visual Web Builder</span>
+            </div>
+        </div>
+
+        <div class="toolbar-actions">
+            <button class="toolbar-btn">↶</button>
+            <button class="toolbar-btn">↷</button>
+
+            <button class="toolbar-btn">💾 Save</button>
+
+            <button class="preview-btn">
+                ▶ Preview
+            </button>
+
+            <button class="generate-btn">
+                &lt;/&gt; Generate
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- Main Editor -->
+    <main class="editor">
+
+        <!-- Left Panel -->
+        <aside class="left-panel">
+
+            <div class="panel-title">
+                <h2>Components</h2>
+                <span>+</span>
+            </div>
+
+            <div class="search-box">
+                🔍
+                <input
+                    type="text"
+                    placeholder="Search components..."
+                >
+            </div>
+
+
+            <div class="component-section">
+
+                <h3>Basic</h3>
+
+                <div class="component-grid">
+
+                    <button class="component">
+                        <span>▣</span>
+                        <small>Container</small>
+                    </button>
+
+                    <button class="component">
+                        <span>T</span>
+                        <small>Text</small>
+                    </button>
+
+                    <button class="component">
+                        <span>▭</span>
+                        <small>Button</small>
+                    </button>
+
+                    <button class="component">
+                        <span>▧</span>
+                        <small>Image</small>
+                    </button>
+
+                    <button class="component">
+                        <span>□</span>
+                        <small>Input</small>
+                    </button>
+
+                    <button class="component">
+                        <span>▤</span>
+                        <small>Card</small>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="component-section">
+
+                <h3>Layout</h3>
+
+                <div class="component-grid">
+
+                    <button class="component">
+                        <span>☰</span>
+                        <small>Navbar</small>
+                    </button>
+
+                    <button class="component">
+                        <span>▬</span>
+                        <small>Section</small>
+                    </button>
+
+                    <button class="component">
+                        <span>▥</span>
+                        <small>Grid</small>
+                    </button>
+
+                    <button class="component">
+                        <span>≡</span>
+                        <small>Footer</small>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel-footer">
+                <span>Components</span>
+                <strong>10</strong>
+            </div>
+
+        </aside>
+
+
+        <!-- Canvas Area -->
+        <section class="canvas-area">
+
+            <div class="canvas-toolbar">
+
+                <div class="breadcrumb">
+                    <span>Home</span>
+                    <span>/</span>
+                    <strong>Page</strong>
+                </div>
+
+                <div class="canvas-tools">
+
+                    <button>−</button>
+                    <span>100%</span>
+                    <button>+</button>
+
+                    <button>↗</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="workspace">
+
+                <div class="page-canvas">
+
+                    <div class="empty-state">
+
+                        <div class="empty-icon">
+                            +
+                        </div>
+
+                        <h2>Start designing your website</h2>
+
+                        <p>
+                            Select a component from the left panel
+                            and add it to your canvas.
+                        </p>
+
+                        <button class="empty-button">
+                            Add your first component
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Panel -->
+
+            <div class="bottom-panel">
+
+                <button class="bottom-tab active">
+                    Design
+                </button>
+
+                <button class="bottom-tab">
+                    HTML
+                </button>
+
+                <button class="bottom-tab">
+                    CSS
+                </button>
+
+                <button class="bottom-tab">
+                    JavaScript
+                </button>
+
+                <button class="bottom-tab">
+                    Preview
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Right Panel -->
+
+        <aside class="right-panel">
+
+            <div class="properties-header">
+
+                <h2>Properties</h2>
+
+                <span>⚙</span>
+
+            </div>
+
+
+            <div class="no-selection">
+
+                <div class="selection-icon">
+                    ↖
+                </div>
+
+                <h3>No element selected</h3>
+
+                <p>
+                    Select an element on the canvas
+                    to edit its properties.
+                </p>
+
+            </div>
+
+
+            <!-- This will be activated later -->
+
+            <div class="property-section hidden">
+
+                <label>Text</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter text"
+                >
+
+                <label>Width</label>
+
+                <input
+                    type="text"
+                    placeholder="120px"
+                >
+
+                <label>Height</label>
+
+                <input
+                    type="text"
+                    placeholder="40px"
+                >
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- Status Bar -->
+
+    <footer class="statusbar">
+
+        <div>
+            <span class="status-dot"></span>
+            Ready
+        </div>
+
+        <div>
+            UI Model: <strong>0 elements</strong>
+        </div>
+
+    </footer>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
